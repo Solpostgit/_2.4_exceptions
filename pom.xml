@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>pro.sky.java.course2</groupId>
-    <artifactId>exceptions</artifactId>
+    <artifactId>4_exceptions</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
