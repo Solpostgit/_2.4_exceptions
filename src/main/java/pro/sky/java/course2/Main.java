@@ -11,13 +11,15 @@ public class Main {
         //используй для проверки исключения на длину {"S", "k", "y", "P", "r", "o", "_", "2", "0", "2", "3", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"};
         String [] password = {"g", "H", "j", "b", "r", "_", "7", "8", "T", "s"};
         String [] confirmPassword = {"g", "H", "j", "b", "r", "_", "7", "8", "T", "s"};
-        String [] symbolUsed = {"A", "a", "B", "b", "C", "c", "D", "d", "E", "e", "F", "f", "G", "g", "H", "h", "I", "i", "J", "j", "K", "k", "L", "l", "M", "m", "N", "n", "O", "o", "P", "p", "Q", "q", "R", "r", "S", "s", "T", "t", "U", "u", "V", "v", "W", "w", "X", "x", "Y", "y", "Z", "z", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "_"};
 
-        changeUserExceptions(login, password, confirmPassword, symbolUsed);
+
+        changeUserExceptions(login, password, confirmPassword);
     }
 
-    public static void changeUserExceptions(String[] login, String[] password, String[] confirmPassword, String[] symbolUsed) {
-        //метод принимает 4 параметра
+    public static void changeUserExceptions(String[] login, String[] password, String[] confirmPassword) {
+
+        String [] symbolUsed = {"A", "a", "B", "b", "C", "c", "D", "d", "E", "e", "F", "f", "G", "g", "H", "h", "I", "i", "J", "j", "K", "k", "L", "l", "M", "m", "N", "n", "O", "o", "P", "p", "Q", "q", "R", "r", "S", "s", "T", "t", "U", "u", "V", "v", "W", "w", "X", "x", "Y", "y", "Z", "z", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "_"};
+
         if (login.length > 20) {
             System.out.println("Превышена длина login");
             throw new WrongLoginException();
