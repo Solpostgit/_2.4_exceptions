@@ -5,6 +5,12 @@ import pro.sky.java.course2.exceptions.WrongPasswordException;
 
 import java.util.Arrays;
 
+// использовал одномерные массивы для login, password, confirmPassword, так как у меня возникли сложности в понимании,
+// как выполнить сравнение элементов строки (login) и одномерного массива (symbolUsed - набора допустимых символов).
+// использовал throw new WrongLoginException(); для обработки исключений, а не multi-catch block, так как плохо
+// разобрался с данной темой, опасался, что не успею выполнить домашнее задание.
+// завтра вечером буду разбирать, на данный момент, хочу показать, что я занимаюсь, а не бью баклуши!
+
 public class Main {
     public static void main(String[] args) {
         String [] login = {"S", "k", "y", "P", "r", "o", "_", "2", "0", "2", "3"};
